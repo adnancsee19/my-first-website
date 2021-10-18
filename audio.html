@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Player</title>
+  <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
+  background-attachment: fixed;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: minmax(150px, 440px);
+  font-family: "Montserrat", sans-serif;
+}
+
+#wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+#title {
+  margin-bottom: 20px;
+}
+audio {
+  width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: white;
+}
+
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1 id="title">Audio Player</h1>
+    <audio controls>
+      <source src="https://audioplayer.madza.dev/Madza-Persistence.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+            
+    
+  </div>
+</body>
+
+</html>
